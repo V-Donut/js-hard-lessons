@@ -1,7 +1,6 @@
 const trimString = function (str) {
   if (typeof str !== 'string') {
-    console.log('В функцию передана не строка!');
-    return;
+    return 'В функцию передана не строка!';
   } 
 
   str = str.trim();
