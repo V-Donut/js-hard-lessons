@@ -23,10 +23,7 @@ const DomElement = function (selector, height, width, bg, fontSize) {
     } else {
       newElem.id = this.attribute;
     }
-    newElem.style.height = this.height;
-    newElem.style.width = this.width;
-    newElem.style.backgroundColor = this.bg;
-    newElem.style.fontSize = this.fontSize;
+    newElem.style.cssText = 'background-color: ' + this.bg + '; font-size: ' + this.fontSize + '; height: ' + this.height + '; width: ' + this.width + ';';
     newElem.textContent = 'Любой текст';
 
     document.body.append(newElem);
