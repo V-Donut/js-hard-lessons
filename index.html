@@ -5,8 +5,27 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    .circle {
+      position: relative;
+      width: 65px;
+      height: 65px;
+      background-color: hsl(61, 98%, 55%);
+      border-radius: 50%;
+    }
+    .buttons {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+    }
+  </style>
 </head>
 <body>
+  <div class="circle"></div>
+  <div class="buttons">
+    <button id="start">Запуск/Стоп</button>
+    <button id="reset">Сбросить</button>
+  </div>
   <script defer src="./script.js"></script>
 </body>
 </html>
