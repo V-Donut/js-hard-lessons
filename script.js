@@ -38,7 +38,7 @@ const sendData = (url, data) => {
 
 getData('db.json')
   .then(data => {
-    sendData('https://jsonplaceholder.typicode.com/posts/5', JSON.stringify(data));
+    sendData('https://jsonplaceholder.typicode.com/posts', JSON.stringify(data));
   })
   .catch(error => {
     console.log(error);
